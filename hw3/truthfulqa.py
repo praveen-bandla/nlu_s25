@@ -197,7 +197,7 @@ class MultipleChoicePipeline(Pipeline):
             input,
             padding=True,
             truncation=True,
-            max_length=self.tokenizer.model_max_length,
+            max_length=512,
             return_tensors="pt",
             return_attention_mask=True
         )
